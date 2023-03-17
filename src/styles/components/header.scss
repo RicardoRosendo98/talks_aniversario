@@ -1,0 +1,30 @@
+.header{
+    margin-top: 100px;
+
+    .container {
+        border-radius: 8px 8px 0 0;
+        border-top: 3px solid #888;
+
+
+    }
+
+    h4 {
+        font-size: 25px;
+        color: #554120;
+        text-align: center;
+        padding: 23px 76px;
+    }
+
+    @media (max-width: 640px) {
+        margin-top: 0;
+
+        h4 {
+        font-size: 15px;
+        padding: 20px 25px 20px 30px;   
+        text-align: left;
+        }
+        
+    }
+    
+}
+

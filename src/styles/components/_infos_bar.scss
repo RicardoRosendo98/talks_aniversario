@@ -1,0 +1,47 @@
+@use '../variables';
+
+.infos-bar {
+    padding: 16px 24px;
+    background-color: variables.$colorBarra;
+    width: 56%;
+    margin-left: 220px;
+    display: flex;
+    border-radius: 4px;
+    
+    &__infos {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$colorTitle;
+
+            b {
+                color: variables.$colorTitle;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        width: 94%;
+        margin: 0 0 0 22px;
+        justify-content: space-evenly;
+
+        @media (max-width: 640px) {
+            display: block;
+            margin: 0 0 0 28px;
+            width: 85%;
+            
+            &__infos {
+                display: block;
+                &__item {
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+
+}
